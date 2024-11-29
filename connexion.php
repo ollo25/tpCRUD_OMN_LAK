@@ -10,10 +10,13 @@ if (isset($_POST['emailCo']) && isset($_POST['mdpCo'])) {
         if ($utilisateur) {
             var_dump($utilisateur);
             echo "Connexion reussit ! ";
+            session_start();
+            $_SESSION['id'] = $utilisateur['id'];
         }
         else {
-            
-            echo "Mdp ou email incorrecte ! ";
+            echo "fdgdfg";
+
+            header('Location: inscription.php');
         }
 }
 else {
