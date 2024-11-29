@@ -11,12 +11,20 @@ if (isset($_POST['emailCo']) && isset($_POST['mdpCo'])) {
             var_dump($utilisateur);
             echo "Connexion reussit ! ";
             session_start();
-            $_SESSION['id'] = $utilisateur['id'];
+            $_SESSION['mdp'] = $utilisateur['mdp'];
+            $_SESSION['email'] = $utilisateur['email'];
+
+            $_SESSION['nom'] = $utilisateur['nom'];
+            $_SESSION['prenom'] = $utilisateur['prenom'];
+            $_SESSION['rue'] = $utilisateur['rue'];
+            $_SESSION['cp'] = $utilisateur['cp'];
+            $_SESSION['ville'] = $utilisateur['ville'];
+            $_SESSION['tel_portable'] = $utilisateur['tel_portable'];
+            $_SESSION['tel_fixe'] = $utilisateur['tel_fixe'];
+            header('Location: affichage_donnee.php');
         }
         else {
-            echo "fdgdfg";
-
-            header('Location: inscription.php');
+            header("Location: tpSequence2.html");
         }
 }
 else {
