@@ -1,6 +1,6 @@
 <?php
 var_dump($_POST);
-if($_POST['emailCo']="admin@admin" && $_POST['mdpCo']="admin"){
+if($_POST['emailCo']=="admin@admin" && $_POST['mdpCo']=="admin"){
     header("location:affichage_donnee.php");
     
 }
