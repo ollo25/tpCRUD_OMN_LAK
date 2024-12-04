@@ -5,16 +5,9 @@
 <body>
 <?php
 session_start();
-echo
-$_SESSION['mdp'].
-$_SESSION['email'].
-$_SESSION['nom'].
-$_SESSION['prenom']. 
-$_SESSION['rue']. 
-$_SESSION['cp']. 
-$_SESSION['ville']. 
-$_SESSION['tel_portable']. 
-$_SESSION['tel_fixe'];
+echo "Bienvenue sur votre session ". $_SESSION['nom']." ".$_SESSION['prenom']."<br>";
+echo "Vous habitez au ".$_SESSION['rue']." ".$_SESSION['ville'].", ".$_SESSION['cp']."<br>";
+
 ?>
 
 
