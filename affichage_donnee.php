@@ -5,7 +5,7 @@
 <body>
 <?php
 session_start();
-if($_SESSION['email']="admin" && $_SESSION['mdp']="admin"){
+if($_SESSION['email']="admin@admin" && $_SESSION['mdp']="admin"){
     echo "vous etes l'admin";
 }
 else{
