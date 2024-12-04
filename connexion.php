@@ -1,8 +1,7 @@
 <?php
 var_dump($_POST);
-if($_POST['emailCo']="admin@admin" && $_POST['mdpCo']="admin"){
-    header("location:affichage_donnee.php");
-    
+if($_POST['emailCo']=="admin@admin" && $_POST['mdpCo']=="admin"){
+    echo "admin";
 }
 if (isset($_POST['emailCo']) && isset($_POST['mdpCo'])) {
         $bdd = new PDO('mysql:host=localhost;dbname=gestionlivre;charset=utf8', 'root', '');
@@ -28,9 +27,10 @@ if (isset($_POST['emailCo']) && isset($_POST['mdpCo'])) {
             header('Location: affichage_donnee.php');
         }
         else {
-            header("Location: tpSequence2.html");
+            echo "erreur";
         }
 }
 else {
     echo "Veuillez remplir tous les champs";
 }
+?>
