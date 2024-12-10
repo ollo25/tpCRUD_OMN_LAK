@@ -1,13 +1,5 @@
 <?php
 var_dump($_POST);
-if($_POST['emailCo']=="admin@admin" && $_POST['mdpCo']=="admin"){
-<<<<<<< HEAD
-    header("location:affichage_donnee.php");
-    
-=======
-    echo "admin";
->>>>>>> 6523bea265022398d57d6963a3ddef6f955caf64
-}
 if (isset($_POST['emailCo']) && isset($_POST['mdpCo'])) {
         $bdd = new PDO('mysql:host=localhost;dbname=gestionlivre;charset=utf8', 'root', '');
         $req = $bdd->prepare('SELECT * FROM inscrit WHERE email = :email AND mdp = :mdp');

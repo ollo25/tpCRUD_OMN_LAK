@@ -26,14 +26,7 @@
             <td>    <input type="submit" value="Connexion"><br></td>
         </tr>
     </table>
-</form>
-<hr>
-
-
-
-
-<b><u>Incription :</u></b>
-<form action="inscription.php" method="post">
+    <hr>
     <table>
         <tr>
             <th></th>
@@ -85,7 +78,9 @@
     </table>
 </form>
 <hr>
-
+<form action="indexAdmin.php" method="get">
+    <button type="submit">ADMIN</button>
+</form>
 
 </body>
 </html>
