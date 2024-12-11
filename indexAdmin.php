@@ -13,11 +13,11 @@
         </tr>
         <tr>
             <td><label for="">Nom utilisateur: </label></td>
-            <td><input type="email" name="emailCo" id="emailCo"><br></td>
+            <td><input type="email" name="emailAdmin" id="emailCo"><br></td>
         </tr>
         <tr>
             <td><label for="mdpCo">Mot de passe: </label></td>
-            <td><input type="password" name="mdpCo" id="mdpCo"><br></td>
+            <td><input type="password" name="mdpAdmin" id="mdpCo"><br></td>
         </tr>
         <tr>
             <td>    <input type="submit" value="Connexion"><br></td>
