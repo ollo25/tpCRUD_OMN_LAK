@@ -7,7 +7,7 @@
 <body>
 <hr>
 <b><u>modification information :</u></b>
-<form action="inscription.php" method="post">
+<form action="gestionModificationUser.php" method="post">
     <table>
         <tr>
             <th>veuillez entrez vos nouvelles informations</th>
