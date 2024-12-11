@@ -26,7 +26,9 @@
             <td>    <input type="submit" value="Connexion"><br></td>
         </tr>
     </table>
+    </form>
     <hr>
+<form action="inscription.php" method="post">
     <table>
         <tr>
             <th></th>
