@@ -1,5 +1,4 @@
 <?php
-var_dump($_POST);
 if (isset($_POST['emailCo']) && isset($_POST['mdpCo'])) {
         $bdd = new PDO('mysql:host=localhost;dbname=gestionlivre;charset=utf8', 'root', '');
         $req = $bdd->prepare('SELECT * FROM inscrit WHERE email = :email AND mdp = :mdp');
@@ -24,7 +23,10 @@ if (isset($_POST['emailCo']) && isset($_POST['mdpCo'])) {
             header('Location: affichage_donnee.php');
         }
         else {
-            echo "erreur";
+            echo "Email ou mot de passe incorrect !";
+            echo "<form action='tpSequence2.php' method='get'>
+    <button type='submit'>Retour</button>
+</form>";
         }
 }
 else {

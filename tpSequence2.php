@@ -8,7 +8,7 @@
 <body>
 <hr>
 <b><u>Connexion :</u></b>
-<form action="connexion.php" method="post">
+<form action="connexionUtilisateur.php" method="post">
     <table>
         <tr>
             <th></th>

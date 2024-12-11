@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="admin.php" method="post">
+<form action="connexionAdmin.php" method="post">
     <table>
         <tr>
             <th></th>
