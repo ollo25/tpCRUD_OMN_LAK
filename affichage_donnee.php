@@ -5,6 +5,7 @@
 <body>
 <?php
 session_start();
+var_dump($_SESSION);
     echo "Bienvenue sur votre session ". $_SESSION['nom']." ".$_SESSION['prenom']."<br>";
     echo "Vous habitez au ".$_SESSION['rue']." ".$_SESSION['ville'].", ".$_SESSION['cp']."<br>";
 ?>
@@ -12,12 +13,10 @@ session_start();
     <button type='submit'>modifier ses informations</button>
 </form>
 
-<form action="tpSequence2.php" method="post">
-    <button type='submit'>Deconnexion <?php
-         session_destroy();
-?>  </button>
-</form>
 
+<form action="deco.php" method="post">
+    <button type='submit'>Deconnexion   </button>
+</form>
 
 
 

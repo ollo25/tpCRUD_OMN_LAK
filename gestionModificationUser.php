@@ -1,6 +1,8 @@
 
 <?php
 session_start();
+var_dump($_SESSION);
+var_dump($_POST);
 $bdd = new PDO('mysql:host=localhost;dbname=gestionlivre;charset=UTF8', 'root', '');
 
 if (isset($_POST['nouvelEmail'])) {
@@ -74,7 +76,7 @@ if (isset($_POST['nouveauMdpIn']) && isset($_POST['nouveauMdpConfirmation'])) {
             'mdp' => $_POST['nouveauMdpIn'],
             'session_email' => $_SESSION['email']
         ));
-    } else {
-        echo("Les mots de passe ne correspondent pas");
     }
 }
+?>
+modification reussi
